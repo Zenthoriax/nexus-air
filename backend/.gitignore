@@ -1,0 +1,76 @@
+# ─── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+sdist/
+wheels/
+*.whl
+MANIFEST
+
+# ─── Virtual Environments ─────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+.env.local
+.env.*.local
+
+# ─── Environment & Secrets ────────────────────────────────────────────────────
+.env
+# keep the example file so others can onboard
+!.env.example
+
+# ─── Database ─────────────────────────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+data/
+
+# ─── Alembic ──────────────────────────────────────────────────────────────────
+# generated migration scripts are committed, but not the compiled cache
+alembic/versions/__pycache__/
+
+# ─── ML / Embedding Models ────────────────────────────────────────────────────
+# sentence-transformers and HuggingFace cache large model files
+models/
+*.bin
+*.safetensors
+*.onnx
+*.pt
+*.pth
+*.gguf
+.cache/
+huggingface/
+
+# ─── Testing ──────────────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+pytest_output.txt
+*.log
+
+# ─── IDEs & Editors ───────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*~
+
+# ─── OS Generated ─────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Misc ─────────────────────────────────────────────────────────────────────
+*.bak
+*.tmp
